@@ -1,5 +1,4 @@
 ## Project Overview
-
 This project is simple application that includes angular front-end for user and backend to provide API.
 
 The main feature of this project is:
@@ -8,18 +7,32 @@ The main feature of this project is:
 - Add new feeds
 - View feeds
 
-## Project Link
+## Getting Started
+1. Clone this repo locally into the location of your choice
+2. Open the terminal and navigate to the root of the repo
+3. Follow the instructions in the Project Setup
 
+The project can run but is missing some information to connect to the database and storage service
+
+## Project Link
 Frontend: http://thanhlnt-udagram.s3-website-us-east-1.amazonaws.com/
 
 Backend: http://udagram-api-dev.us-east-1.elasticbeanstalk.com/
 
 ## Project Setup
-
-1. Clone source from repository: https://github.com/lntthanh/udagram
-2. In AWS, provision a publicly available RDS database running Postgres.
-3. In AWS, provision a s3 bucket for hosting the uploaded files.
-4. Setup ENV variables:
+1. Clone the project - `https://github.com/lntthanh/udagram.git`
+2. Build & Run Frontend
+   1. Go into the project directory - `cd udagram/udagram-frontend`
+   2. Install the dependencies - `npm install`
+   3. Start the frontend - `npm run start`
+3. Build & Run Backend
+   1. Go into the project directory - `cd udagram/udagram-api`
+   2. Setup environment depend on `set_env.sh`
+   3. Install the dependencies - `npm install`
+   4. Start the backend - `npm run dev`
+4. In AWS, provision a publicly available RDS database running Postgres.
+5. In AWS, provision a s3 bucket for hosting the uploaded files.
+6. Setup ENV variables:
 
 ```
 export POSTGRES_USERNAME=postgres     // Postgres username
@@ -32,5 +45,8 @@ export AWS_PROFILE=default            // AWS profile
 export JWT_SECRET=mysecretstring      // JWT secret key
 ```
 
-5. Run the API, from the root of repo, navigate to api folder `cd udagram/udagram-api` folder to install the node_modules `npm i -f`. After installation is done, start the API in dev mode with `npm run dev`
-6. Without closing terminal in step 5. Open the new terminal, navigate to frontend folder `cd udagram/udagram-frontend` to install the node_modules `npm i -f`. After installation is done, start the frontend in dev mode with `npm run start`.
+## Documentation
+
+- Detailed Documentation is provided in `./docs/README.md`
+- Screenshots of the AWS configurations and the CircleCI are provided in `./docs/screenshots/`
+- Architecture Diagrams of the AWS and the Pipeline are provided in `./docs/architecture diagrams/`
