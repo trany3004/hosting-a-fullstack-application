@@ -49,4 +49,10 @@ export JWT_SECRET=mysecretstring      // JWT secret key
 
 - Detailed Documentation is provided in `./docs/README.md`
 - Screenshots of the AWS configurations and the CircleCI are provided in `./docs/screenshots/`
-- Architecture Diagrams of the AWS and the Pipeline are provided in `./docs/architecture diagrams/`
+- Architecture Diagrams of the AWS and the Pipeline are provided in `./docs/architecture/`
+
+## Built With
+
+- [Angular](https://angular.io/) - Single Page Application Framework
+- [Node](https://nodejs.org) - Javascript Runtime
+- [Express](https://expressjs.com/) - Javascript API Framework
