@@ -15,6 +15,7 @@ jobs:
       - node/install:
           node-version: '14.15'
       - checkout
+      - eb/setup
       - run:
           name: Setup Custom environment variables
           command: |
