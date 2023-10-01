@@ -66,6 +66,8 @@ jobs:
           command: |
             echo "Install, build, deploy in both apps"
             aws configure list
+            echo $AWS_PROFILE
+
             npm run deploy
 
 workflows:
