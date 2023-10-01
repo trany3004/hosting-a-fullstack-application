@@ -1,4 +1,5 @@
 ## Project Overview
+
 This project is simple application that includes angular front-end for user and backend to provide API.
 
 The main feature of this project is:
@@ -8,6 +9,7 @@ The main feature of this project is:
 - View feeds
 
 ## Getting Started
+
 1. Clone this repo locally into the location of your choice
 2. Open the terminal and navigate to the root of the repo
 3. Follow the instructions in the Project Setup
@@ -15,12 +17,14 @@ The main feature of this project is:
 The project can run but is missing some information to connect to the database and storage service
 
 ## Project Link
-Frontend: http://thanhlnt-udagram.s3-website-us-east-1.amazonaws.com/
 
-Backend: http://udagram-api-dev.us-east-1.elasticbeanstalk.com/
+Frontend: http://yttn2-udagram.s3-website.us-east-2.amazonaws.com/
+
+Backend: http://api-udagram.us-east-1.elasticbeanstalk.com/
 
 ## Project Setup
-1. Clone the project - `https://github.com/lntthanh/udagram.git`
+
+1. Clone the project - `https://github.com/udacity/nd0067-c4-deployment-process-project-starter`
 2. Build & Run Frontend
    1. Go into the project directory - `cd udagram/udagram-frontend`
    2. Install the dependencies - `npm install`
@@ -50,6 +54,7 @@ export JWT_SECRET=mysecretstring      // JWT secret key
 - Detailed Documentation is provided in `./docs/README.md`
 - Screenshots of the AWS configurations and the CircleCI are provided in `./docs/screenshots/`
 - Architecture Diagrams of the AWS and the Pipeline are provided in `./docs/architecture/`
+-
 
 ## Built With
 
