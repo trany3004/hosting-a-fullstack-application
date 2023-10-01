@@ -65,7 +65,8 @@ jobs:
           # TODO: Install, build, deploy in both apps
           command: |
             echo "Install, build, deploy in both apps"
-            aws configure list
+            aws configure list-profiles
+
             echo $AWS_PROFILE
 
             npm run deploy
