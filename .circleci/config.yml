@@ -49,6 +49,7 @@ jobs:
             echo "Build the backend API"
             npm run api:build
   # deploy step will run only after manual approval
+
   deploy:
     docker:
       - image: 'cimg/base:stable'
@@ -56,8 +57,8 @@ jobs:
     steps:
       - node/install:
           node-version: '14.15'
-      - eb/setup
       - aws-cli/setup
+      - eb/setup
       - checkout
       - run:
           name: Deploy App
